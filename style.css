@@ -1,0 +1,828 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f7f7;
+    color: #111;
+    line-height: 1.6;
+}
+
+
+.container_1 {
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    background-image: url("hero1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+}
+
+.header {
+    padding: 20px clamp(16px, 4vw, 60px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    padding-left: clamp(10px, 3vw, 30px);
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 20px;
+    gap: 10px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+}
+
+.menu a img{
+    width: 15px;
+    position: relative;
+    top: 5px;
+}
+
+.header button {
+    background-color: white;
+    font-weight: bold;
+    color: #111;
+    border-radius: 30px;
+    padding: 10px 28px;
+    border: none;
+    min-width: 120px;
+    cursor: pointer;
+}
+
+.boody {
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    padding: 0 clamp(20px, 6vw, 140px);
+}
+
+.handt {
+    width: min(520px, 100%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.handt h1 {
+    font-size: clamp(2.6rem, 3.5vw, 3.8rem);
+}
+.handtp{
+    text-align: justify;
+}
+
+.handt button {
+    background-color: transparent;
+    color: white;
+    height: 42px;
+    border: 1px solid white;
+    border-radius: 40px;
+    width: fit-content;
+    padding: 0 32px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.paw{
+    position: relative;
+    top: 3px;
+    left: 4px;
+    width: 15px;
+    height: 15px;
+}
+
+.container_2{
+    width: 100%;
+    padding: 0 clamp(16px, 3vw, 60px);
+    min-height: 80vh;
+    display: grid;
+    grid-template-rows: 10vh auto;
+}
+
+.tit{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    border-bottom: 1px solid black;
+}
+
+.products{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.products,
+.cards,
+.down,
+.tanimg,
+.touch_main,
+.footer {
+    width: min(1200px, 100%);
+    margin: 0 auto;
+}
+
+.fproducts{
+    border: 0.8px solid black;
+    width: 70%;
+    border-radius: 5px;
+    min-height: 70vh;
+    display: grid;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    grid-template-rows: auto auto auto auto;
+    gap: 10px;
+    padding: 20px;
+}
+
+.first{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.first input{
+    width: 15%;
+    min-width: 120px;
+    background-color: #f4f4f4;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    padding: 0 10px;
+}
+
+.second{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+    row-gap: 10px;
+    flex-wrap: wrap;
+}
+
+.second a {
+    text-decoration: none;
+    color: black;
+}
+
+#ran {
+    background-color: black;
+    color: white;
+    width: 80px;
+    height: 30px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.third{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 0;
+}
+.third img{
+    width: 200px;
+    height: 200px;
+}
+
+.forth{
+    display: flex;
+    justify-content: end;
+    padding-right: 10px;
+}
+
+.container_3{
+    width: 100%;
+    padding: 0 clamp(16px, 3vw, 60px);
+    display: grid;
+    grid-template-rows: 100px auto;
+}
+
+.ser{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.cards{
+    width: 100%;
+    display: flex;
+    height: auto;
+    justify-content: center;
+    margin: 20px;
+    padding: 0 20px;
+}
+
+.card{
+    width: 80%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: 2fr 1.2fr;
+    gap: 20px;
+}
+
+.left{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.left img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.right img{
+    width: 100%;
+    height: 87%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.container_4{
+    width: 100%;
+    padding: 0 clamp(16px, 3vw, 60px);
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 10vh auto;
+}
+
+.up{
+    padding: 20px;
+    border-bottom: 1px solid black;
+}
+
+.down{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.rig{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 10px 60px;
+}
+.rig p{
+    text-align: justify;
+}
+.taxt p{
+    text-align: justify;
+}
+
+.lef img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 40px;
+}
+
+.container_5 {
+    width: 100%;
+    padding: clamp(32px, 4vw, 60px) clamp(20px, 4vw, 60px);
+}
+
+.our h2 {
+    margin-bottom: 30px;
+    padding-left: 20px;
+}
+
+.team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.teams {
+    width: 230px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    transition: .3s ease;
+}
+
+.timg img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.teams h5 {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.teams p {
+    font-size: 14px;
+    margin: 5px 0 15px;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.social img {
+    width: 120px;
+}
+
+.container_6{
+    width: 100%;
+    padding: 0 clamp(16px, 3vw, 60px);
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 10vh auto;
+}
+
+.blo{
+    padding: 20px;
+}
+
+.tanimg{
+    width: 100%;
+    min-height: 80vh;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    padding: 50px;
+    gap: 20px;
+}
+
+.taxt{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.vid img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 30px;
+}
+
+.container_7 {
+    width: 100%;
+    background-color: #0b1424;
+    color: white;
+    padding: clamp(30px, 5vw, 60px);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    font-family: Arial, sans-serif;
+}
+
+.touch_title h2 {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.touch_main {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 40px;
+}
+
+.touch_form {
+    background: white;
+    color: black;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.touch_form form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.row2 {
+    display: flex;
+    gap: 20px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex: 1;
+}
+
+.field input,
+.field textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d2d2d2;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+.checkbox {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.send_btn {
+    width: 100%;
+    background: #0b1424;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.touch_info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.info_box h4 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.info_box p {
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+.info_box span {
+    font-size: 14px;
+    display: block;
+    margin-top: 5px;
+}
+
+.newsletter {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.news_input {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.news_input input {
+    width: 250px;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+}
+
+.news_input button {
+    padding: 10px 25px;
+    background: white;
+    color: black;
+    border-radius: 6px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.foot_left h2 {
+    font-size: 22px;
+}
+
+.foot_links {
+    display: flex;
+    gap: 40px;
+}
+
+.foot_links h4 {
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.foot_links p {
+    margin-bottom: 6px;
+    font-size: 13px;
+    opacity: 0.9;
+}
+
+.copy {
+    text-align: center;
+    opacity: 0.6;
+    /* padding: 20px 0; */
+}
+
+@media (max-width: 1024px) {
+    .menu {
+        right: 60px;
+        column-gap: 15px;
+    }
+    
+    .boody {
+        padding-left: 50px;
+    }
+    
+    .handt {
+        width: 50%;
+    }
+    
+    .fproducts {
+        width: 85%;
+    }
+    
+    .down {
+        grid-template-columns: 1fr;
+    }
+    
+    .rig {
+        padding: 20px 40px;
+    }
+    
+    .lef img {
+        padding: 20px;
+        max-height: 50vh;
+    }
+    
+    .tanimg {
+        grid-template-columns: 1fr;
+        padding: 30px;
+    }
+    
+    .vid img {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 900px) {
+    .touch_main {
+        grid-template-columns: 1fr;
+    }
+
+    .touch_info {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .foot_links {
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+    
+    .card {
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
+    
+    .right img {
+        height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px;
+    }
+    
+    .logo {
+        padding-left: 0;
+    }
+    
+    .menu {
+        position: static;
+        flex-wrap: wrap;
+        padding-top: 0;
+    }
+    
+    .container_1 {
+        grid-template-rows: auto 1fr;
+    }
+    
+    .boody {
+        padding: 30px;
+        justify-content: center;
+    }
+    
+    .handt {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .handt h1 {
+        font-size: 28px;
+    }
+    
+    .handt button {
+        width: 150px;
+    }
+    
+    .fproducts {
+        width: 95%;
+        padding: 15px;
+    }
+    
+    .first {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .first input {
+        width: 100%;
+    }
+    
+    .second {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .left {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    
+    .left img {
+        height: 180px;
+    }
+    
+    .rig {
+        padding: 20px;
+    }
+    
+    .teams {
+        width: 200px;
+    }
+    
+    .tanimg {
+        padding: 20px;
+    }
+    
+    .container_7 {
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .row2 {
+        flex-direction: column;
+    }
+
+    .news_input {
+        flex-direction: column;
+    }
+
+    .news_input input {
+        width: 100%;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .foot_links {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .touch_info {
+        grid-template-columns: 1fr;
+    }
+    
+    .header button {
+        width: 120px;
+    }
+    
+    .handt h1 {
+        font-size: 24px;
+    }
+    
+    .handt p {
+        font-size: 14px;
+    }
+    
+    .fproducts {
+        width: 100%;
+        border-radius: 0;
+        border-left: none;
+        border-right: none;
+    }
+    
+    .cards {
+        padding: 0 10px;
+    }
+    
+    .card {
+        width: 100%;
+        padding: 15px;
+    }
+    
+    .left img {
+        height: 150px;
+    }
+    
+    .teams {
+        width: 100%;
+        max-width: 280px;
+    }
+    
+    .social img {
+        width: 100px;
+    }
+    
+    .touch_form {
+        padding: 20px;
+    }
+    
+    .touch_title h2 {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 400px) {
+    .menu {
+        column-gap: 10px;
+        font-size: 14px;
+    }
+    
+    .header button {
+        width: 100px;
+        height: 35px;
+        font-size: 13px;
+    }
+    
+    .handt h1 {
+        font-size: 20px;
+    }
+    
+    .handt button {
+        width: 130px;
+        height: 35px;
+        font-size: 13px;
+    }
+    
+    .second {
+        font-size: 14px;
+    }
+    
+    #ran {
+        width: 70px;
+        height: 28px;
+        font-size: 13px;
+    }
+    
+    .left img {
+        height: 120px;
+    }
+}
